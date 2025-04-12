@@ -1,16 +1,16 @@
-# 🧪 LIBERATOR Artifact – Replication Guide
+# LIBERATOR Artifact – Replication Guide
 
 This guide summarizes how to reproduce the experiments from the paper:  
 **"Liberating libraries through automated fuzz driver generation"**
 
-- 📎 DOI: [10.5281/zenodo.14888072](https://doi.org/10.5281/zenodo.14888072)  
-- 📁 Repository: [github.com/HexHive/liberator](https://github.com/HexHive/liberator)  
-- 🐳 Containerized setup via Docker  
-- 🧠 Authors: Flavio Toffalini, Nicolas Badoux, Zurab Tsinadze, Mathias Payer
+- DOI: [10.5281/zenodo.14888072](https://doi.org/10.5281/zenodo.14888072)  
+- Repository: [github.com/HexHive/liberator](https://github.com/HexHive/liberator)  
+- Containerized setup via Docker  
+- Authors: Flavio Toffalini, Nicolas Badoux, Zurab Tsinadze, Mathias Payer
 
 ---
 
-## ✅ Requirements
+## Requirements
 
 ### Hardware
 - At least **64 GB of RAM**
@@ -26,12 +26,12 @@ This guide summarizes how to reproduce the experiments from the paper:
 - `curl`, `git`, `docker`, `pip`
 - Python dependencies:
   ```bash
-  pip install -r requirements_host.txt
+  ./preinstall.sh
   ```
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 # Clone the repository
@@ -49,7 +49,7 @@ pip install -r requirements_host.txt
 
 ---
 
-## 🧪 Experiment 1 (E1): Trade-off Analysis
+## Experiment 1 (E1): Trade-off Analysis
 
 - **Goal**: Measure the impact of driver generation time (`tgen`) vs test time (`ttest`)
 - **Claim supported**: (C1)
@@ -75,7 +75,7 @@ pip install -r requirements_host.txt
 
 ---
 
-## 🧪 Experiment 2 (E2): Library Exploration
+## Experiment 2 (E2): Library Exploration
 
 - **Goal**: Evaluate how LIBERATOR explores library internals
 - **Claim supported**: (C2)
@@ -95,7 +95,7 @@ pip install -r requirements_host.txt
 
 ---
 
-## 🧪 Experiment 3 (E3): Ablation Study
+## Experiment 3 (E3): Ablation Study
 
 - **Goal**: Measure contribution of each module in LIBERATOR
 - **Claim supported**: (C3)
@@ -114,7 +114,7 @@ pip install -r requirements_host.txt
 
 ---
 
-## 🧾 Major Claims Supported
+## Major Claims Supported
 
 - **(C1)** LIBERATOR captures the trade-off between creating and testing drivers  
 - **(C2)** LIBERATOR diversifies coverage across libraries  
@@ -122,7 +122,7 @@ pip install -r requirements_host.txt
 
 ---
 
-## 🔗 Resources
+## Resources
 
 - Main repo: [github.com/HexHive/liberator](https://github.com/HexHive/liberator)
 - Artifact version: `fse-25-artifact`

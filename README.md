@@ -15,6 +15,34 @@ The whole framework is composed of three main components:
 
 Or the cite button on the left of GitHub interface.
 
+## Run the artifact
+
+We prepared a small-scale experiment to execute our framework. The instructions
+are collected **[here](ARTIFACT.md)**. Notice that the artifact only covers a short
+campaign lasting around 10 hours, and one single run. If you want to run the
+full array of experiments, you need around 10TB of space, and probably a week
+for running everything (considering a 32 core machine and around 30 jobs in
+parallel). 
+
+If you want to run the **full campaign**, you can follow these commands.
+
+```bash
+tmux # highly recommended
+./preinstall.sh
+cd fuzzing_campaigns/
+./fuzzing_pipeline_generation.sh
+```
+
+At the end, yo will have many spurious files in your home, to delete (almost) all of them, do as follows.
+
+```bash
+cd ..
+./tool/misc/clean_spurious_files.sh 
+```
+
+We tried to clean as much as possible, but our regex did not catch all :) 
+If you have any solution, your PRs are more than welcome!
+
 ## How to Install
 
 The environment has been designed for VS Code. 
@@ -120,16 +148,18 @@ indicate if the solution requires manual intervention or is completely automatic
       driver and increase its stability. 
 - Data initialization -> some library expects the user to initialize data before
   interacting with the APIs. These operations fall beyond the API code analysis.
-    - chain of objects -> the library expects the user to create a chain of
+    - object chains -> the library expects the user to create a chain of
       objects that point to each other, without using any APIs
     - callbacks -> for testing reason, the user should prepare a set of
       callbacks to test specific library functionalities
-    - var arg functions -> should we care of these cases (??)
-    > **manual**: we require an operator to define a small set of templates to
-    > be used for initializing these cases, e.g., a set of minimal callbacks, or
-    > simple patterns to initialize a struct. Then our driver generator
-    > leverages this info to build valid drivers. We also estimate the number of
-    > manual templates required and their types.
+    - var arg functions
+    > **partial-automatic**: we have a set of heuristics that cover the main
+    > object initialization strategies encountered in our dataset. We currently
+    > do not cover objects that require manual initialization, e.g., fields that
+    > require to be set individually. Callbacks are automatically set through
+    > mock functions, vararg are handled through a set of pointers, and object
+    > chains are inferred through type-dependencies from the API functions
+    > combined with a so-called "field bias", more info in the paper.
 - Useful header -> what are the headers useful for a consumer?
     > **manual**: we require an operator to indicate the public header files of
     > a library. Many headers are supposed to be private but they are installed
