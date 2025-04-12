@@ -4,26 +4,26 @@ authors:
 - family-names: "Toffalini"
   given-names: "Flavio"
   email: flavio.toffalini@rub.de                                               
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+  orcid: "https://orcid.org/0000-0002-7114-5640"
   affiliation: RUB;EPFL                                                           
 - family-names: "Badoux"
   given-names: "Nicolas"
   email: nicolas.badoux@epfl.ch                                               
   affiliation: EPFL                                                           
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+  orcid: "https://orcid.org/0000-0002-0774-5166"
 - family-names: "Zurab"
   given-names: "Tsinadze"
-  email: nicolas.badoux@epfl.ch                                               
-  affiliation: UNIST                                                           
+  email: zurab.tsinadze@epfl.ch                                               
+  orcid: "https://orcid.org/0009-0003-8575-8207"
+  affiliation: EPFL                                                           
 - family-names: "Payer"
   given-names: "Mathias"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+  orcid: "https://orcid.org/0000-0001-5054-7547"
   email: mathias.payer@epfl.ch                                               
   affiliation: EPFL                                                           
 title: Liberating Libraries through Automated Fuzz Driver Generation: Striking a Balance without Consumer Code
 doi: 10.1145/3729365
 type: conference-paper                                                              
-    orcid: "https://orcid.org/0000-0000-0000-0000"
 month: 7
 year: 2025
 url: https://dx.doi.org/10.1145/3729365

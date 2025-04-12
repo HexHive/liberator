@@ -11,9 +11,7 @@ The whole framework is composed of three main components:
 - Fuzzing: we use slightly customized libfuzz to fuzz the new generated drivers - `./custom-libfuzzer`.
 
 ## Citation
-Flavio Toffalini, Nicolas Badoux, Zurab Tsinadze, and Mathias Payer. 2025. Liberating Libraries through
-Automated Fuzz Driver Generation: Striking a Balance without Consumer Code. Proc. ACM Softw. Eng. 2, FSE,
-Article FSE095 (July 2025), 23 pages. https://doi.org/10.1145/3729365
+> Flavio Toffalini, Nicolas Badoux, Zurab Tsinadze, and Mathias Payer. 2025. Liberating Libraries through Automated Fuzz Driver Generation: Striking a Balance without Consumer Code. Proc. ACM Softw. Eng. 2, FSE, Article FSE095 (July 2025), 23 pages. https://doi.org/10.1145/3729365
 
 Or the cite button on the left of GitHub interface.
 
