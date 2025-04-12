@@ -13,6 +13,19 @@ The whole framework is composed of three main components:
 ## Citation
 > Flavio Toffalini, Nicolas Badoux, Zurab Tsinadze, and Mathias Payer. 2025. Liberating Libraries through Automated Fuzz Driver Generation: Striking a Balance without Consumer Code. Proc. ACM Softw. Eng. 2, FSE, Article FSE095 (July 2025), 23 pages. https://doi.org/10.1145/3729365
 
+```bibtex
+@inproceedings{Toffalini_Liberating_Libraries_through_2025,
+  author = {Toffalini, Flavio and Badoux, Nicolas and Zurab, Tsinadze and Payer, Mathias},
+  booktitle = {Proceedings of the ACM on Software Engineering,},
+  doi = {10.1145/3729365},
+  month = jul,
+  volume = 2,
+  publisher = {ACM New York, NY, USA},
+  title = {{Liberating Libraries through Automated Fuzz Driver Generation}},
+  url = {https://dx.doi.org/10.14722/3729365},
+  year = {2025}
+}
+```
 Or the cite button on the left of GitHub interface.
 
 ## Run the artifact
