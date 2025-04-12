@@ -1,0 +1,237 @@
+[
+	{
+		"function_name" : "cJSON_CreateBool",
+		"param_0" : 
+		{
+			"access_type_set" : 
+			[
+				{
+					"access" : "read",
+					"debug" : [],
+					"fields" : [],
+					"parent" : 0,
+					"type" : "c86ee0d9d7ed3e7b4fdbf486fa6c0ebb",
+					"type_string" : "i32"
+				}
+			],
+			"is_array" : false,
+			"is_file_path" : false,
+			"is_malloc_size" : false,
+			"len_depends_on" : "",
+			"set_by" : []
+		},
+		"return" : 
+		{
+			"access_type_set" : 
+			[
+				{
+					"access" : "read",
+					"debug" : [],
+					"fields" : [],
+					"parent" : 0,
+					"type" : "13e78f7269fb4001160f783455a4ca4d",
+					"type_string" : "%struct.cJSON*"
+				},
+				{
+					"access" : "write",
+					"debug" : [],
+					"fields" : [],
+					"parent" : 0,
+					"type" : "13e78f7269fb4001160f783455a4ca4d",
+					"type_string" : "%struct.cJSON*"
+				},
+				{
+					"access" : "delete",
+					"debug" : [],
+					"fields" : [],
+					"parent" : 0,
+					"type" : "13e78f7269fb4001160f783455a4ca4d",
+					"type_string" : "%struct.cJSON*"
+				},
+				{
+					"access" : "create",
+					"debug" : [],
+					"fields" : [],
+					"parent" : 0,
+					"type" : "13e78f7269fb4001160f783455a4ca4d",
+					"type_string" : "%struct.cJSON*"
+				},
+				{
+					"access" : "read",
+					"debug" : [],
+					"fields" : 
+					[
+						-1
+					],
+					"parent" : 
+					{
+						"access" : "read",
+						"fields" : [],
+						"type" : "13e78f7269fb4001160f783455a4ca4d",
+						"type_string" : "%struct.cJSON*"
+					},
+					"type" : "13e78f7269fb4001160f783455a4ca4d",
+					"type_string" : "%struct.cJSON*"
+				},
+				{
+					"access" : "write",
+					"debug" : [],
+					"fields" : 
+					[
+						-1
+					],
+					"parent" : 
+					{
+						"access" : "delete",
+						"fields" : [],
+						"type" : "13e78f7269fb4001160f783455a4ca4d",
+						"type_string" : "%struct.cJSON*"
+					},
+					"type" : "13e78f7269fb4001160f783455a4ca4d",
+					"type_string" : "%struct.cJSON*"
+				},
+				{
+					"access" : "write",
+					"debug" : [],
+					"fields" : 
+					[
+						0
+					],
+					"parent" : 
+					{
+						"access" : "write",
+						"fields" : [],
+						"type" : "13e78f7269fb4001160f783455a4ca4d",
+						"type_string" : "%struct.cJSON*"
+					},
+					"type" : "13e78f7269fb4001160f783455a4ca4d",
+					"type_string" : "%struct.cJSON*"
+				},
+				{
+					"access" : "write",
+					"debug" : [],
+					"fields" : 
+					[
+						1
+					],
+					"parent" : 
+					{
+						"access" : "write",
+						"fields" : [],
+						"type" : "13e78f7269fb4001160f783455a4ca4d",
+						"type_string" : "%struct.cJSON*"
+					},
+					"type" : "13e78f7269fb4001160f783455a4ca4d",
+					"type_string" : "%struct.cJSON*"
+				},
+				{
+					"access" : "write",
+					"debug" : [],
+					"fields" : 
+					[
+						2
+					],
+					"parent" : 
+					{
+						"access" : "write",
+						"fields" : [],
+						"type" : "13e78f7269fb4001160f783455a4ca4d",
+						"type_string" : "%struct.cJSON*"
+					},
+					"type" : "13e78f7269fb4001160f783455a4ca4d",
+					"type_string" : "%struct.cJSON*"
+				},
+				{
+					"access" : "write",
+					"debug" : [],
+					"fields" : 
+					[
+						3
+					],
+					"parent" : 
+					{
+						"access" : "write",
+						"fields" : [],
+						"type" : "13e78f7269fb4001160f783455a4ca4d",
+						"type_string" : "%struct.cJSON*"
+					},
+					"type" : "c86ee0d9d7ed3e7b4fdbf486fa6c0ebb",
+					"type_string" : "i32"
+				},
+				{
+					"access" : "write",
+					"debug" : [],
+					"fields" : 
+					[
+						4
+					],
+					"parent" : 
+					{
+						"access" : "write",
+						"fields" : [],
+						"type" : "13e78f7269fb4001160f783455a4ca4d",
+						"type_string" : "%struct.cJSON*"
+					},
+					"type" : "8b336322cb5b10c8b7dac308c85cff15",
+					"type_string" : "i8*"
+				},
+				{
+					"access" : "write",
+					"debug" : [],
+					"fields" : 
+					[
+						5
+					],
+					"parent" : 
+					{
+						"access" : "write",
+						"fields" : [],
+						"type" : "13e78f7269fb4001160f783455a4ca4d",
+						"type_string" : "%struct.cJSON*"
+					},
+					"type" : "c86ee0d9d7ed3e7b4fdbf486fa6c0ebb",
+					"type_string" : "i32"
+				},
+				{
+					"access" : "write",
+					"debug" : [],
+					"fields" : 
+					[
+						6
+					],
+					"parent" : 
+					{
+						"access" : "write",
+						"fields" : [],
+						"type" : "13e78f7269fb4001160f783455a4ca4d",
+						"type_string" : "%struct.cJSON*"
+					},
+					"type" : "c23fa9996925b610710d93e28c59a3e2",
+					"type_string" : "double"
+				},
+				{
+					"access" : "write",
+					"debug" : [],
+					"fields" : 
+					[
+						7
+					],
+					"parent" : 
+					{
+						"access" : "write",
+						"fields" : [],
+						"type" : "13e78f7269fb4001160f783455a4ca4d",
+						"type_string" : "%struct.cJSON*"
+					},
+					"type" : "8b336322cb5b10c8b7dac308c85cff15",
+					"type_string" : "i8*"
+				}
+			],
+			"is_array" : false,
+			"is_file_path" : false,
+			"is_malloc_size" : false,
+			"len_depends_on" : "",
+			"set_by" : []
+		}
+	}
+]

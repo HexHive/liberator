@@ -1,0 +1,24 @@
+[analysis]
+apis_llvm = "/workspaces/libfuzz/regression_tests/condition_extractor/test_malloc2/apis_llvm.json"
+apis_clang = "/workspaces/libfuzz/regression_tests/condition_extractor/test_malloc2/apis_clang.json"
+coercemap = "/workspaces/libfuzz/regression_tests/condition_extractor/test_malloc2/coerce.log"
+headers = "/workspaces/libfuzz/regression_tests/condition_extractor/test_malloc2/exported_functions.txt"
+incomplete_types = "/workspaces/libfuzz/regression_tests/condition_extractor/test_malloc2/incomplete_types.txt"
+conditions = "/workspaces/libfuzz/regression_tests/condition_extractor/test_malloc2/library.json"
+# minimum_apis = ""
+minimum_apis = "/workspaces/libfuzz/regression_tests/condition_extractor/test_malloc2/minimize_api.txt"
+data_layout = "/workspaces/libfuzz/regression_tests/condition_extractor/test_malloc2/datalayout.txt"
+
+
+[generator]
+workdir = "/workspaces/libfuzz/regression_tests/condition_extractor/test_malloc2/workdir/"
+policy = "constraint_based"
+dep_graph = "type"
+# dep_graph = "undef"
+pool_size = 1
+driver_size = 10
+num_seeds = 1
+backend = "libfuzz"
+
+[backend]
+headers =  "/workspaces/libfuzz/regression_tests/condition_extractor/test_malloc2/"

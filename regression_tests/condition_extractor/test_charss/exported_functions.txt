@@ -1,0 +1,2 @@
+bar(const char *)
+foo(char *const *)

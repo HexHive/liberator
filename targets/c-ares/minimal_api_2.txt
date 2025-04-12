@@ -1,0 +1,8 @@
+ares_init
+ares_init_options
+ares_set_servers_csv
+ares_set_sortlist
+ares_dup
+ares_save_options
+ares_destroy_options
+ares_destroy

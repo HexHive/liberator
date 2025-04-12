@@ -1,0 +1,33 @@
+deflate
+deflateBound
+deflateEnd
+deflateInit
+deflateInit_
+deflateInit2_
+deflateParams
+deflateSetDictionary
+inflate
+inflateEnd
+inflateInit_
+inflateSetDictionary
+inflateSync
+gzclose
+gzerror
+gzopen
+gzread
+gzwrite
+uncompress
+compress2
+compressBound
+
+# THESE APIS ARE NOT WELL HANDLED FOR DIFFERENT REASONS
+# NO IDEA HOW TO HANDLE
+# crc32_combine
+# crc32_combine_gen
+# crc32_combine_op
+# NEED TO CONTROL LEN
+# adler32
+# adler32_combine
+# adler32_z
+# crc32
+# crc32_z

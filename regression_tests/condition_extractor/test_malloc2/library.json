@@ -1,0 +1,85 @@
+[
+    {
+        "function_name": "TIFFRegisterCODEC",
+        "param_0": {
+            "access_type_set": [
+                {
+                    "access": "read",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "c86ee0d9d7ed3e7b4fdbf486fa6c0ebb",
+                    "type_string": "i16"
+                },
+                {
+                    "access": "return",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "c86ee0d9d7ed3e7b4fdbf486fa6c0ebb",
+                    "type_string": "i16"
+                }
+            ],
+            "is_array": false,
+            "is_file_path": false,
+            "is_malloc_size": false,
+            "len_depends_on": ""
+        },
+        "param_1": {
+            "access_type_set": [
+                {
+                    "access": "read",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "18b89c5f007a284357aa3c461c3c31b1",
+                    "type_string": "i8*"
+                },
+                {
+                    "access": "read",
+                    "fields": [
+                        -1
+                    ],
+                    "parent": {
+                        "access": "read",
+                        "fields": [],
+                        "type": "18b89c5f007a284357aa3c461c3c31b1",
+                        "type_string": "i8*"
+                    },
+                    "type": "18b89c5f007a284357aa3c461c3c31b1",
+                    "type_string": "i8*"
+                }
+            ],
+            "is_array": true,
+            "is_file_path": false,
+            "is_malloc_size": false,
+            "len_depends_on": ""
+        },
+        "return": {
+            "access_type_set": [
+                {
+                    "access": "read",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "203714205345f0242e6f4e1c7ed5963c",
+                    "type_string": "%struct.TIFFCodec*"
+                },
+                {
+                    "access": "write",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "203714205345f0242e6f4e1c7ed5963c",
+                    "type_string": "%struct.TIFFCodec*"
+                },
+                {
+                    "access": "return",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "203714205345f0242e6f4e1c7ed5963c",
+                    "type_string": "%struct.TIFFCodec*"
+                }
+            ],
+            "is_array": false,
+            "is_file_path": false,
+            "is_malloc_size": false,
+            "len_depends_on": ""
+        }
+    }
+]

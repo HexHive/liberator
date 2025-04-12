@@ -1,0 +1,1 @@
+[{"functionName":"TIFFFlush","param_0":[{"access":"read","fields":[]},{"access":"read","fields":[-1]},{"access":"read","fields":[2]}],"return":[{"access":"read","fields":[]},{"access":"write","fields":[]},{"access":"return","fields":[]}]}]

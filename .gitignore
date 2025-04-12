@@ -1,0 +1,119 @@
+workdir/*
+workdir_*_*/*
+analysis/*
+analysis_old/*
+**/*.pyc
+.vscode/
+results
+crashes
+libfuzz.code-workspace
+
+LLVM/llvm-build
+*.bc
+*.ll
+*.dot
+
+meta/*
+
+fuzzing_campaigns/generate_*_testing_*
+
+fuzzing_campaigns/gen*_deep*
+fuzzing_campaigns/perc_api*
+fuzzing_campaigns/fix*
+
+condition_extractor/src_bkp/*
+condition_extractor/src_bkp/**/*
+
+condition_extractor/node_modules/**/*
+
+selection_main/*
+
+feedback.txt
+feedback_received.txt
+
+analysis_result.zip
+
+## C gitignore
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+*.bin
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.pdf
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+tests/libfuzzer/driver0
+tool/main.py
+tool/misc/extract_included_functions.py
+tool/misc/extract_param_names/check_debug_info.py
+tool/misc/extract_param_names/param_names_extractor_tool.py
+tool/misc/extract_param_names/param_names_extractor.py
+condition_extractor/package-lock.json
+
+
+# Fuzzing Campaigns
+fuzzing_campaigns/workdir_*
+fuzzing_campaigns/total_library_coverage*
+fuzzing_campaigns/total_library_cluster*
+fuzzing_campaigns/traces
+fuzzing_campaigns/results.csv
+fuzzing_campaigns/config.txt
+fuzzing_campaigns/time_budget.csv
+
+
+point_to_test/
+service.log
+
+llvm-project/build
+llvm-project-old
+llvm-project/
+fuzzing_campaigns/weight_logs.txt
+fuzzing_campaigns/source_weight_logs.json
+paths_observed.txt
+tool/misc/rq1.png

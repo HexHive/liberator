@@ -1,0 +1,2 @@
+struct.internal_hooks 192 6af3d6e25fbdb150e2dba9a442ae96f7 0
+struct.a_struct 192 1e85684e10058b9449f3f5c4cb84477b 0

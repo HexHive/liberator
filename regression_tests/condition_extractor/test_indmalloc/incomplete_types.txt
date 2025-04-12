@@ -1,0 +1,3 @@
+%a_struct
+%my_struct
+%__locale_data

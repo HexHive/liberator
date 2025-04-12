@@ -1,0 +1,1 @@
+{"function_name": "TIFFRegisterCODEC", "namespace": [], "return_info": {"const": false, "type_clang": "TIFFCodec*"}, "arguments_info": [{"const": false, "type_clang": "__uint16_t"}, {"const": true, "type_clang": "char*"}]}

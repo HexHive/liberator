@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/workspaces/libfuzz/library_statistics_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/GlobalStruct.cpp.o -c /workspaces/libfuzz/library_statistics_extractor/src/GlobalStruct.cpp",
+  "file": "/workspaces/libfuzz/library_statistics_extractor/src/GlobalStruct.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/library_statistics_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/PhiFunction.cpp.o -c /workspaces/libfuzz/library_statistics_extractor/src/PhiFunction.cpp",
+  "file": "/workspaces/libfuzz/library_statistics_extractor/src/PhiFunction.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/library_statistics_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/TypeMatcher.cpp.o -c /workspaces/libfuzz/library_statistics_extractor/src/TypeMatcher.cpp",
+  "file": "/workspaces/libfuzz/library_statistics_extractor/src/TypeMatcher.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/library_statistics_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/extractor.cpp.o -c /workspaces/libfuzz/library_statistics_extractor/src/extractor.cpp",
+  "file": "/workspaces/libfuzz/library_statistics_extractor/src/extractor.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/library_statistics_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/jsoncpp.cpp.o -c /workspaces/libfuzz/library_statistics_extractor/src/jsoncpp.cpp",
+  "file": "/workspaces/libfuzz/library_statistics_extractor/src/jsoncpp.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/library_statistics_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/md5.cpp.o -c /workspaces/libfuzz/library_statistics_extractor/src/md5.cpp",
+  "file": "/workspaces/libfuzz/library_statistics_extractor/src/md5.cpp"
+}
+]

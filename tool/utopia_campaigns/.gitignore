@@ -1,0 +1,17 @@
+build
+
+.vscode
+.clangd
+.idea
+__pycache__/
+
+exp/
+
+*.received.txt
+
+core
+results/
+corpus/
+corpus_minimized/
+callgrind/
+coverage_data/

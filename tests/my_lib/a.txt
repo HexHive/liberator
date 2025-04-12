@@ -1,0 +1,90 @@
+PhASAR v0521
+A LLVM-based static analysis framework
+
+
+----- Found the following leaks -----
+No leaks found!
+
+***************************************************************
+*                  Raw IDESolver results                      *
+***************************************************************
+
+
+============ Results for function '_Z9set_statei' ============
+
+
+N: %2 = alloca i32, align 4, !psr.id !17 | ID: 15
+-------------------------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+N: store i32 %0, i32* %2, align 4, !psr.id !18 | ID: 16
+-------------------------------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+N: %3 = load i32, i32* %2, align 4, !psr.id !19 | ID: 17
+--------------------------------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+N: store i32 %3, i32* @STATE, align 4, !psr.id !20 | ID: 18
+-----------------------------------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+N: ret void, !psr.id !21 | ID: 19
+---------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+============ Results for function '_Z9get_statev' ============
+
+
+N: %1 = load i32, i32* @STATE, align 4, !psr.id !22 | ID: 20
+------------------------------------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+N: ret i32 %1, !psr.id !23 | ID: 21
+-----------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+============ Results for function 'startservice' ============
+
+
+N: %1 = call i32 @_Z9get_statev(), !psr.id !24 | ID: 22
+-------------------------------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: TOP
+
+
+N: %2 = icmp eq i32 %1, 1, !psr.id !25 | ID: 23
+-----------------------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+N: br i1 %2, label %3, label %4, !psr.id !26 | ID: 24
+-----------------------------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+N: br label %5, !psr.id !27 | ID: 25
+------------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+N: call void @_Z9set_statei(i32 1), !psr.id !28 | ID: 26
+--------------------------------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+N: br label %5, !psr.id !29 | ID: 27
+------------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+
+
+N: ret void, !psr.id !30 | ID: 28
+---------------------------------
+	D: @zero_value = constant i2 0, align 4 | ID: -1 | V: BOTTOM
+

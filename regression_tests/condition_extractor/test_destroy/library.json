@@ -1,0 +1,69 @@
+[
+	{
+		"function_name" : "decoder_peek_si_internal",
+		"param_0" : 
+		{
+			"access_type_set" : 
+			[
+				{
+					"access" : "read",
+					"debug" : 
+					[
+						"IntraICFGNode69 {fun: decoder_peek_si_internal{ \"ln\": 84, \"cl\": 39, \"fl\": \"library.c\" }}\nLoadStmt: [Var139 <-- Var127]\t\n   %7 = load i8*, i8** %3, align 8, !dbg !283 { \"ln\": 84, \"cl\": 39, \"fl\": \"library.c\" }",
+						"IntraICFGNode70 {fun: decoder_peek_si_internal{ \"ln\": 84, \"cl\": 37, \"fl\": \"library.c\" }}\nStoreStmt: [Var138 <-- Var139]\t\n   store i8* %7, i8** %6, align 8, !dbg !282 { \"ln\": 84, \"cl\": 37, \"fl\": \"library.c\" }",
+						"IntraICFGNode66 {fun: decoder_peek_si_internal}\nStoreStmt: [Var127 <-- Var125]\t\n   store i8* %0, i8** %3, align 8 ",
+						"IntraICFGNode72 {fun: decoder_peek_si_internal{ \"ln\": 84, \"cl\": 45, \"fl\": \"library.c\" }}\nLoadStmt: [Var142 <-- Var127]\t\n   %9 = load i8*, i8** %3, align 8, !dbg !284 { \"ln\": 84, \"cl\": 45, \"fl\": \"library.c\" }",
+						"IntraICFGNode76 {fun: decoder_peek_si_internal{ \"ln\": 84, \"cl\": 37, \"fl\": \"library.c\" }}\nStoreStmt: [Var141 <-- Var145]\t\n   store i8* %12, i8** %8, align 8, !dbg !282 { \"ln\": 84, \"cl\": 37, \"fl\": \"library.c\" }"
+					],
+					"fields" : [],
+					"parent" : 0,
+					"type" : "18b89c5f007a284357aa3c461c3c31b1",
+					"type_string" : "i8*"
+				}
+			],
+			"is_array" : true,
+			"is_file_path" : false,
+			"is_malloc_size" : false,
+			"len_depends_on" : "",
+			"set_by" : []
+		},
+		"param_1" : 
+		{
+			"access_type_set" : 
+			[
+				{
+					"access" : "read",
+					"debug" : 
+					[
+						"IntraICFGNode67 {fun: decoder_peek_si_internal}\nStoreStmt: [Var129 <-- Var126]\t\n   store i32 %1, i32* %4, align 4 ",
+						"IntraICFGNode80 {fun: decoder_peek_si_internal{ \"ln\": 85, \"cl\": 26, \"fl\": \"library.c\" }}\nLoadStmt: [Var151 <-- Var129]\t\n   %15 = load i32, i32* %4, align 4, !dbg !288 { \"ln\": 85, \"cl\": 26, \"fl\": \"library.c\" }",
+						"IntraICFGNode73 {fun: decoder_peek_si_internal{ \"ln\": 84, \"cl\": 52, \"fl\": \"library.c\" }}\nLoadStmt: [Var143 <-- Var129]\t\n   %10 = load i32, i32* %4, align 4, !dbg !285 { \"ln\": 84, \"cl\": 52, \"fl\": \"library.c\" }",
+						"IntraICFGNode74 {fun: decoder_peek_si_internal{ \"ln\": 84, \"cl\": 50, \"fl\": \"library.c\" }}\nCopyStmt: [Var144 <-- Var143]\t\n   %11 = zext i32 %10 to i64, !dbg !286 { \"ln\": 84, \"cl\": 50, \"fl\": \"library.c\" }",
+						"IntraICFGNode76 {fun: decoder_peek_si_internal{ \"ln\": 84, \"cl\": 37, \"fl\": \"library.c\" }}\nStoreStmt: [Var141 <-- Var145]\t\n   store i8* %12, i8** %8, align 8, !dbg !282 { \"ln\": 84, \"cl\": 37, \"fl\": \"library.c\" }",
+						"IntraICFGNode12 {fun: vpx_rb_read_bit{ \"ln\": 66, \"cl\": 15, \"fl\": \"library.c\" }}\nCmpStmt: [Var56 <-- (Var55 predicate34 Var57)]\t\n   %11 = icmp ugt i32 %10, 100, !dbg !280 { \"ln\": 66, \"cl\": 15, \"fl\": \"library.c\" }",
+						"IntraICFGNode11 {fun: vpx_rb_read_bit{ \"ln\": 66, \"cl\": 7, \"fl\": \"library.c\" }}\nLoadStmt: [Var55 <-- Var41]\t\n   %10 = load i32, i32* %5, align 4, !dbg !278 { \"ln\": 66, \"cl\": 7, \"fl\": \"library.c\" }",
+						"IntraICFGNode10 {fun: vpx_rb_read_bit}\nStoreStmt: [Var41 <-- Var35]\t\n   store i32 %1, i32* %5, align 4 "
+					],
+					"fields" : [],
+					"parent" : 0,
+					"type" : "c86ee0d9d7ed3e7b4fdbf486fa6c0ebb",
+					"type_string" : "i32"
+				}
+			],
+			"is_array" : false,
+			"is_file_path" : false,
+			"is_malloc_size" : false,
+			"len_depends_on" : "",
+			"set_by" : []
+		},
+		"return" : 
+		{
+			"access_type_set" : [],
+			"is_array" : false,
+			"is_file_path" : false,
+			"is_malloc_size" : false,
+			"len_depends_on" : "",
+			"set_by" : []
+		}
+	}
+]

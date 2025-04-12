@@ -1,0 +1,2 @@
+struct._codec 128 d471e8d6dbd81c01cc91aed9e0a7ba38 0
+struct.TIFFCodec 128 a9e3c9a94ba391cc91833785c2b7cf5c 0

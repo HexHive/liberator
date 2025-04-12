@@ -1,0 +1,3 @@
+{"function_name": "foo", "return_info": {"name": "return", "flag": "val", "size": 0, "type": "void"}, "is_vararg": false, "arguments_info": [{"name": "", "flag": "ref", "size": 64, "type": "i8**"}]}
+{"function_name": "bar", "return_info": {"name": "return", "flag": "val", "size": 0, "type": "void"}, "is_vararg": false, "arguments_info": [{"name": "", "flag": "ref", "size": 64, "type": "i8*"}]}
+{"function_name": "llvm.dbg.declare", "return_info": {"name": "return", "flag": "val", "size": 0, "type": "void"}, "is_vararg": false, "arguments_info": [{"name": "", "flag": "val", "size": 0, "type": "metadata"}, {"name": "", "flag": "val", "size": 0, "type": "metadata"}, {"name": "", "flag": "val", "size": 0, "type": "metadata"}]}

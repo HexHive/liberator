@@ -1,0 +1,29 @@
+[analysis]
+apis_llvm = "/workspaces/libfuzz/analysis/cjson/work/apipass/apis_llvm.json"
+apis_clang = "/workspaces/libfuzz/analysis/cjson/work/apipass/apis_clang.json"
+coercemap = "/workspaces/libfuzz/analysis/cjson/work/apipass/coerce.log"
+headers = "/workspaces/libfuzz/analysis/cjson/work/apipass/exported_functions.txt"
+incomplete_types = "/workspaces/libfuzz/analysis/cjson/work/apipass/incomplete_types.txt"
+conditions = "/workspaces/libfuzz/analysis/cjson/work/apipass/conditions.json"
+# minimum_apis = "/workspaces/libfuzz/analysis/cjson/work/apipass/apis_minimized.txt"
+# minimum_apis = "/workspaces/libfuzz/targets/cjson/minimal_api_2.txt"
+# minimum_apis = "/workspaces/libfuzz/analysis/cjson/work/apipass/apis_minimized_3.txt"
+# minimum_apis = "/workspaces/libfuzz/targets/cjson/mini.txt"
+minimum_apis = ""
+data_layout = "/workspaces/libfuzz/analysis/cjson/work/apipass/data_layout.txt"
+enum_types = "/workspaces/libfuzz/analysis/cjson/work/apipass/enum_types.txt"
+
+
+[generator]
+workdir = "/workspaces/libfuzz/workdir/cjson"
+policy = "constraint_based"
+dep_graph = "type"
+# dep_graph = "undef"
+pool_size = 1
+driver_size = 1
+num_seeds = 1
+backend = "libfuzz"
+
+[backend]
+headers = "/workspaces/libfuzz/analysis/cjson/work/include/"
+public_headers = "/workspaces/libfuzz/targets/cjson/public_headers.txt"

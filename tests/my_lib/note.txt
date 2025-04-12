@@ -1,0 +1,6 @@
+
+
+../../phasar/build/tools/phasar-llvm/phasar-llvm -m /workspace/libfuzz/tests/my_lib/myLib.ll -D IDESolverTest --entry-points "print_value"  --auto-globals 1 > a.txt
+
+
+

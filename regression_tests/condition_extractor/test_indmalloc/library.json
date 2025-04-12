@@ -1,0 +1,59 @@
+[
+	{
+		"function_name" : "create",
+		"param_0" : 
+		{
+			"access_type_set" : 
+			[
+				{
+					"access" : "read",
+					"debug" : [],
+					"fields" : [],
+					"parent" : 0,
+					"type" : "8b336322cb5b10c8b7dac308c85cff15",
+					"type_string" : "i8*"
+				}
+			],
+			"is_array" : false,
+			"is_file_path" : false,
+			"is_malloc_size" : false,
+			"len_depends_on" : "",
+			"set_by" : []
+		},
+		"return" : 
+		{
+			"access_type_set" : 
+			[
+				{
+					"access" : "read",
+					"debug" : [],
+					"fields" : [],
+					"parent" : 0,
+					"type" : "bbfac42b6dc8039cfa6a74544089d6e1",
+					"type_string" : "%struct.a_struct*"
+				},
+				{
+					"access" : "write",
+					"debug" : [],
+					"fields" : [],
+					"parent" : 0,
+					"type" : "bbfac42b6dc8039cfa6a74544089d6e1",
+					"type_string" : "%struct.a_struct*"
+				},
+				{
+					"access" : "create",
+					"debug" : [],
+					"fields" : [],
+					"parent" : 0,
+					"type" : "bbfac42b6dc8039cfa6a74544089d6e1",
+					"type_string" : "%struct.a_struct*"
+				}
+			],
+			"is_array" : false,
+			"is_file_path" : false,
+			"is_malloc_size" : false,
+			"len_depends_on" : "",
+			"set_by" : []
+		}
+	}
+]

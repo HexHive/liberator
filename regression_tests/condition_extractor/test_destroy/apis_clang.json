@@ -1,0 +1,1 @@
+{"function_name": "decoder_peek_si_internal", "namespace": [], "return_info": {"const": false, "type_clang": "int"}, "arguments_info": [{"const": true, "type_clang": "uint8_t*"}, {"const": false, "type_clang": "unsigned int"}]}

@@ -1,0 +1,2 @@
+{"function_name": "myDFPlayer_play", "return_info": {"name": "return", "flag": "val", "size": 0, "type": "void"}, "is_vararg": false, "arguments_info": [{"name": "mp3", "flag": "ref", "size": 64, "type": "%struct.mp3*"}]}
+{"function_name": "myDFPlayer_play", "return_info": {"name": "return", "flag": "val", "size": 0, "type": "void"}, "is_vararg": false, "arguments_info": [{"name": "mp3", "flag": "ref", "size": 64, "type": "%struct.mp3*"}]}

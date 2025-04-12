@@ -1,0 +1,5 @@
+get_a_struct()
+init_a_context(iface_t *, a_context_t *, int, short)
+fake_init(iface_t *, a_context_t *)
+use_context(a_context_t *, int)
+get_something(iface_t *, int)

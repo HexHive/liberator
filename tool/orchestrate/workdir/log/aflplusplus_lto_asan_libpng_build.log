@@ -1,0 +1,245 @@
+++ id -u tregua
+++ id -g tregua
++ docker build -t magma/aflplusplus_lto_asan/libpng --build-arg fuzzer_name=aflplusplus_lto_asan --build-arg target_name=libpng --build-arg USER_ID=1000 --build-arg GROUP_ID=1000 --build-arg canaries=1 -f /workspace/magma/docker/Dockerfile /workspace/magma
+Sending build context to Docker daemon  155.4MB
+Step 1/61 : FROM ubuntu:18.04
+ ---> b67d6ac264e4
+Step 2/61 : RUN apt-get update && apt-get install -y sudo
+ ---> Using cache
+ ---> a51a3e7eb73c
+Step 3/61 : ARG magma_root=./
+ ---> Using cache
+ ---> 1d700ab3551e
+Step 4/61 : ENV MAGMA_R /magma
+ ---> Using cache
+ ---> 905c575b1ee2
+Step 5/61 : ENV OUT		/magma_out
+ ---> Using cache
+ ---> 193fb382177d
+Step 6/61 : ENV SHARED 	/magma_shared
+ ---> Using cache
+ ---> a85ac4fc62e2
+Step 7/61 : ENV CC  /usr/bin/gcc
+ ---> Using cache
+ ---> e4f3e1eb32bd
+Step 8/61 : ENV CXX /usr/bin/g++
+ ---> Using cache
+ ---> 2f5d61191a95
+Step 9/61 : ENV LD /usr/bin/ld
+ ---> Using cache
+ ---> 6c8fd6505594
+Step 10/61 : ENV AR /usr/bin/ar
+ ---> Using cache
+ ---> 3e5cc24d63b9
+Step 11/61 : ENV AS /usr/bin/as
+ ---> Using cache
+ ---> 3f90d1ddf941
+Step 12/61 : ENV NM /usr/bin/nm
+ ---> Using cache
+ ---> e8bbb1351431
+Step 13/61 : ENV RANLIB /usr/bin/ranlib
+ ---> Using cache
+ ---> f15ec29809ce
+Step 14/61 : ARG USER_ID=1000
+ ---> Using cache
+ ---> 4c2e82a46a26
+Step 15/61 : ARG GROUP_ID=1000
+ ---> Using cache
+ ---> 9116cf3ac88b
+Step 16/61 : RUN mkdir -p /home && 	groupadd -g ${GROUP_ID} magma && 	useradd -l -u ${USER_ID} -K UMASK=0000 -d /home -g magma magma && 	chown magma:magma /home
+ ---> Using cache
+ ---> b68ea41ad080
+Step 17/61 : RUN	echo "magma:amgam" | chpasswd && usermod -a -G sudo magma
+ ---> Using cache
+ ---> 4d9532ddbe84
+Step 18/61 : RUN mkdir -p ${SHARED} ${OUT} && 	chown magma:magma ${SHARED} ${OUT} && 	chmod 744 ${SHARED} ${OUT}
+ ---> Using cache
+ ---> aae29d1a31f6
+Step 19/61 : ARG magma_path=magma
+ ---> Using cache
+ ---> 795a9084edab
+Step 20/61 : ENV MAGMA 	${MAGMA_R}/${magma_path}
+ ---> Using cache
+ ---> 49fcf048c121
+Step 21/61 : USER root:root
+ ---> Using cache
+ ---> d78d4e98d262
+Step 22/61 : RUN mkdir -p ${MAGMA} && chown magma:magma ${MAGMA}
+ ---> Using cache
+ ---> 052814ba9533
+Step 23/61 : COPY --chown=magma:magma ${magma_root}/${magma_path} ${MAGMA}/
+ ---> Using cache
+ ---> a54da68c5614
+Step 24/61 : RUN ${MAGMA}/preinstall.sh
+ ---> Using cache
+ ---> 11daaa52b2d2
+Step 25/61 : USER magma:magma
+ ---> Using cache
+ ---> 7b748e50305d
+Step 26/61 : RUN ${MAGMA}/prebuild.sh
+ ---> Using cache
+ ---> d88956dbb6b8
+Step 27/61 : ARG fuzzer_name
+ ---> Using cache
+ ---> 2d1e0325a1af
+Step 28/61 : ARG fuzzer_path=fuzzers/${fuzzer_name}
+ ---> Using cache
+ ---> 38248cf44cfb
+Step 29/61 : ENV FUZZER 	${MAGMA_R}/${fuzzer_path}
+ ---> Using cache
+ ---> fefca72009c6
+Step 30/61 : USER root:root
+ ---> Using cache
+ ---> 7ee7bd8f6275
+Step 31/61 : RUN mkdir -p ${FUZZER} && chown magma:magma ${FUZZER}
+ ---> Using cache
+ ---> c5df1c8d3cf7
+Step 32/61 : COPY --chown=magma:magma ${magma_root}/${fuzzer_path} ${FUZZER}/
+ ---> Using cache
+ ---> 905f5fda611f
+Step 33/61 : RUN ${FUZZER}/preinstall.sh
+ ---> Using cache
+ ---> fd06ed5a8c3a
+Step 34/61 : USER magma:magma
+ ---> Using cache
+ ---> dbcbd6db5d86
+Step 35/61 : RUN ${FUZZER}/fetch.sh
+ ---> Using cache
+ ---> e8cb51fe5c92
+Step 36/61 : RUN ${FUZZER}/build.sh
+ ---> Using cache
+ ---> 9c9eea610ea2
+Step 37/61 : ARG target_name
+ ---> Using cache
+ ---> 421e6dd7ebe9
+Step 38/61 : ARG target_path=targets/${target_name}
+ ---> Using cache
+ ---> 006bc2532dfc
+Step 39/61 : ENV TARGET 	${MAGMA_R}/${target_path}
+ ---> Using cache
+ ---> e62a600f0780
+Step 40/61 : USER root:root
+ ---> Using cache
+ ---> acc504d21a4f
+Step 41/61 : RUN mkdir -p ${TARGET} && chown magma:magma ${TARGET}
+ ---> Using cache
+ ---> 881c3c59a11c
+Step 42/61 : COPY --chown=magma:magma ${magma_root}/${target_path} ${TARGET}/
+ ---> Using cache
+ ---> 6f71672045f5
+Step 43/61 : RUN ${TARGET}/preinstall.sh
+ ---> Using cache
+ ---> 7e890b72c133
+Step 44/61 : USER magma:magma
+ ---> Using cache
+ ---> ecfee1cb9d1d
+Step 45/61 : RUN ${TARGET}/fetch.sh
+ ---> Running in a342822dc09e
+[91mCloning into '/magma/targets/libpng/repo'...
+[0m[91mNote: checking out 'a37d4836519517bdce6cb9d956092321eca3e73b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at a37d48365 Eliminate spaces between function name and (
+[0mRemoving intermediate container a342822dc09e
+ ---> 17d40d956072
+Step 46/61 : RUN ${MAGMA}/apply_patches.sh
+ ---> Running in b638c9a2d3a7
+Applying /magma/targets/libpng/patches/setup/libpng16.patch
+patching file scripts/pnglibconf.dfa
+patching file contrib/oss-fuzz/libpng_read_fuzzer.cc
+Hunk #1 succeeded at 18 (offset 3 lines).
+Applying /magma/targets/libpng/patches/bugs/PNG006.patch
+patching file png.c
+patching file pngrutil.c
+Hunk #1 succeeded at 2058 (offset -1 lines).
+Applying /magma/targets/libpng/patches/bugs/PNG002.patch
+patching file png.c
+Hunk #1 succeeded at 4577 (offset 3 lines).
+Hunk #2 succeeded at 4596 (offset 3 lines).
+patching file png.h
+patching file pngerror.c
+Applying /magma/targets/libpng/patches/bugs/PNG007.patch
+patching file pngrtran.c
+patching file pngset.c
+Applying /magma/targets/libpng/patches/bugs/PNG001.patch
+patching file pngrutil.c
+Hunk #1 succeeded at 3164 (offset 1 line).
+Applying /magma/targets/libpng/patches/bugs/PNG005.patch
+patching file png.c
+Hunk #1 succeeded at 2585 (offset 3 lines).
+patching file pngrutil.c
+Hunk #1 succeeded at 4606 (offset 14 lines).
+Applying /magma/targets/libpng/patches/bugs/PNG003.patch
+patching file pngrutil.c
+Hunk #1 succeeded at 983 (offset -1 lines).
+patching file pngset.c
+Applying /magma/targets/libpng/patches/bugs/PNG004.patch
+patching file pngrutil.c
+Hunk #1 succeeded at 3221 (offset 20 lines).
+Hunk #2 succeeded at 3475 (offset 20 lines).
+Hunk #3 succeeded at 3504 (offset 20 lines).
+Hunk #4 succeeded at 3688 (offset 20 lines).
+Removing intermediate container b638c9a2d3a7
+ ---> 580d69f38410
+Step 47/61 : ARG isan
+ ---> Running in c9930a829d82
+Removing intermediate container c9930a829d82
+ ---> 293de806f320
+Step 48/61 : ARG harden
+ ---> Running in ef6e43557ba8
+Removing intermediate container ef6e43557ba8
+ ---> ff2bd9cdcb2a
+Step 49/61 : ARG canaries
+ ---> Running in 542af08de791
+Removing intermediate container 542af08de791
+ ---> 0e844d1c16c5
+Step 50/61 : ARG fixes
+ ---> Running in 8dbe5eabcef6
+Removing intermediate container 8dbe5eabcef6
+ ---> 5d167d37de09
+Step 51/61 : ARG ISAN_FLAG=${isan:+-DMAGMA_FATAL_CANARIES}
+ ---> Running in 04fb948da01c
+Removing intermediate container 04fb948da01c
+ ---> 40a3967b6a7f
+Step 52/61 : ARG HARDEN_FLAG=${harden:+-DMAGMA_HARDEN_CANARIES}
+ ---> Running in 88c6d6aaecfa
+Removing intermediate container 88c6d6aaecfa
+ ---> c6530c71e32f
+Step 53/61 : ARG CANARIES_FLAG=${canaries:+-DMAGMA_ENABLE_CANARIES}
+ ---> Running in 24b44200c435
+Removing intermediate container 24b44200c435
+ ---> 60b41c713b1e
+Step 54/61 : ARG FIXES_FLAG=${fixes:+-DMAGMA_ENABLE_FIXES}
+ ---> Running in 6a687f7c4d2c
+Removing intermediate container 6a687f7c4d2c
+ ---> 5b8872e09a0a
+Step 55/61 : ARG BUILD_FLAGS="-include ${MAGMA}/src/canary.h ${CANARIES_FLAG} ${FIXES_FLAG} ${ISAN_FLAG} ${HARDEN_FLAG} -g -O0"
+ ---> Running in 0ed6d3e10645
+Removing intermediate container 0ed6d3e10645
+ ---> af4b0383b05d
+Step 56/61 : ENV CFLAGS ${BUILD_FLAGS}
+ ---> Running in 78f72622bcf3
+Removing intermediate container 78f72622bcf3
+ ---> d69e317e319e
+Step 57/61 : ENV CXXFLAGS ${BUILD_FLAGS}
+ ---> Running in 970c418d12b1
+Removing intermediate container 970c418d12b1
+ ---> 6847bd0e9cd9
+Step 58/61 : ENV LIBS -l:magma.o -lrt
+ ---> Running in fa905d31f91e
+Removing intermediate container fa905d31f91e
+ ---> 100d493365c5
+Step 59/61 : ENV LDFLAGS -L"${OUT}" -g
+ ---> Running in 809e114574ab
+Removing intermediate container 809e114574ab
+ ---> 66bf39c46f62
+Step 60/61 : RUN ${FUZZER}/instrument.sh
+ ---> Running in 66ff2e93b1ec

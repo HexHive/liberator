@@ -1,0 +1,4 @@
+pcap_open_offline_with_tstamp_precision
+# pcap_set_tstamp_type
+# pcap_snapshot
+pcap_getnonblock

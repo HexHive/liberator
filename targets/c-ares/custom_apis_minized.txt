@@ -1,0 +1,13 @@
+ares_parse_a_reply
+ares_free_hostent
+ares_parse_aaaa_reply
+ares_parse_ptr_reply
+ares_parse_ns_reply
+ares_parse_srv_reply
+ares_free_data
+ares_parse_mx_reply
+ares_parse_txt_reply
+ares_parse_soa_reply
+ares_parse_naptr_reply
+ares_parse_caa_reply
+ares_parse_uri_reply

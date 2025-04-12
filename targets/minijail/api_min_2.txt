@@ -1,0 +1,10 @@
+minijail_new
+#minijail_change_user
+#minijail_change_group
+#minijail_set_supplementary_gids
+#minijail_use_caps
+#minijail_enter
+
+# check why they are not used:
+minijail_run_no_preload
+minijail_set_seccomp_filters

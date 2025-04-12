@@ -1,0 +1,4 @@
+create(char *)
+close(my_struct *)
+my_free(void *)
+my_malloc(size_t)

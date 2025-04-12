@@ -1,0 +1,1 @@
+[{"functionName":"api1","param_0":[{"access":"read","fields":[]},{"access":"read","fields":[-1]},{"access":"read","fields":[2]},{"access":"write","fields":[3]},{"access":"read","fields":[4]},{"access":"read","fields":[6]},{"access":"write","fields":[6]},{"access":"read","fields":[6,-1]},{"access":"read","fields":[6,0]},{"access":"read","fields":[6,2]}],"return":[]}]

@@ -1,0 +1,3 @@
+{"function_name": "TIFFFlush", "return_info": {"name": "return", "flag": "val", "size": 32, "type": "i32"}, "is_vararg": false, "arguments_info": [{"name": "tif", "flag": "ref", "size": 64, "type": "%struct.tiff*"}]}
+{"function_name": "_TIFFfree", "return_info": {"name": "return", "flag": "val", "size": 0, "type": "void"}, "is_vararg": false, "arguments_info": [{"name": "p", "flag": "ref", "size": 64, "type": "i8*"}]}
+{"function_name": "api1", "return_info": {"name": "return", "flag": "val", "size": 0, "type": "void"}, "is_vararg": false, "arguments_info": [{"name": "tif", "flag": "ref", "size": 64, "type": "%struct.tiff*"}]}

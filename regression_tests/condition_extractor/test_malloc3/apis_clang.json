@@ -1,0 +1,1 @@
+{"function_name": "pthreadpool_allocate", "namespace": [], "return_info": {"const": false, "type_clang": "struct_t*"}, "arguments_info": [{"const": false, "type_clang": "int"}]}

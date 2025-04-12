@@ -1,0 +1,3 @@
+htp_hook_destroy
+htp_hook_register
+# htp_get_version

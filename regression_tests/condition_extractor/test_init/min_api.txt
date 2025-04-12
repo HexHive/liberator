@@ -1,0 +1,5 @@
+get_a_struct
+use_context
+fake_init
+init_a_context
+# get_something

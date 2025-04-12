@@ -1,0 +1,17 @@
+catalog.h
+hash.h
+HTMLparser.h
+HTMLtree.h
+parser.h
+# parserInternals.h
+tree.h
+uri.h
+xinclude.h
+xmlerror.h
+xmlIO.h
+xmlreader.h
+xmlregexp.h
+xmlschemas.h
+xmlstring.h
+xpointer.h
+xmlversion.h

@@ -1,0 +1,30 @@
+[analysis]
+apis_llvm = "/workspaces/libfuzz/analysis/minijail/work/apipass/apis_llvm.json"
+apis_clang = "/workspaces/libfuzz/analysis/minijail/work/apipass/apis_clang.json"
+coercemap = "/workspaces/libfuzz/analysis/minijail/work/apipass/coerce.log"
+headers = "/workspaces/libfuzz/analysis/minijail/work/apipass/exported_functions.txt"
+incomplete_types = "/workspaces/libfuzz/analysis/minijail/work/apipass/incomplete_types.txt"
+conditions = "/workspaces/libfuzz/analysis/minijail/work/apipass/conditions.json"
+# minimum_apis = "/workspaces/libfuzz/analysis/minijail/work/apipass/apis_minimized.txt"
+# minimum_apis = "/workspaces/libfuzz/analysis/minijail/work/apipass/apis_minimized_2.txt"
+# minimum_apis = "/workspaces/libfuzz/analysis/minijail/work/apipass/apis_minimized_3.txt"
+minimum_apis = ""
+# minimum_apis = "/workspaces/libfuzz/targets/minijail/api_min_2.txt"
+data_layout = "/workspaces/libfuzz/analysis/minijail/work/apipass/data_layout.txt"
+enum_types = "/workspaces/libfuzz/analysis/minijail/work/apipass/enum_types.txt"
+weights = "/workspaces/libfuzz/analysis/minijail/work/apipass/weights.json"
+
+
+[generator]
+workdir = "/workspaces/libfuzz/workdir/minijail"
+policy = "constraint_based"
+dep_graph = "type"
+# dep_graph = "undef"
+pool_size = 1
+driver_size = 2
+num_seeds = 1
+backend = "libfuzz"
+
+[backend]
+headers = "/workspaces/libfuzz/analysis/minijail/work/include/"
+public_headers = "/workspaces/libfuzz/targets/minijail/public_headers.txt"

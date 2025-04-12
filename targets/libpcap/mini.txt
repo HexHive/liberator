@@ -1,0 +1,8 @@
+# bpf_validate
+# bpf_filter
+# pcap_tstamp_type_val_to_description
+# pcap_compile_nopcap
+# pcap_init
+pcap_freecode
+pcap_compile_nopcap
+pcap_datalink_val_to_description_or_dlt

@@ -1,0 +1,5 @@
+gzopen
+gzoffset
+# gzread
+gzclose_w
+# gzclose_r

@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/AccessType.cpp.o -c /workspaces/libfuzz/condition_extractor/src/AccessType.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/AccessType.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/Dominators.cpp.o -c /workspaces/libfuzz/condition_extractor/src/Dominators.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/Dominators.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/GenericDominatorTy.cpp.o -c /workspaces/libfuzz/condition_extractor/src/GenericDominatorTy.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/GenericDominatorTy.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/GlobalStruct.cpp.o -c /workspaces/libfuzz/condition_extractor/src/GlobalStruct.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/GlobalStruct.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/IBBG.cpp.o -c /workspaces/libfuzz/condition_extractor/src/IBBG.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/IBBG.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/LibfuzzUtil.cpp.o -c /workspaces/libfuzz/condition_extractor/src/LibfuzzUtil.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/LibfuzzUtil.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/PhiFunction.cpp.o -c /workspaces/libfuzz/condition_extractor/src/PhiFunction.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/PhiFunction.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/PostDominators.cpp.o -c /workspaces/libfuzz/condition_extractor/src/PostDominators.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/PostDominators.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/TypeMatcher.cpp.o -c /workspaces/libfuzz/condition_extractor/src/TypeMatcher.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/TypeMatcher.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/extractor.cpp.o -c /workspaces/libfuzz/condition_extractor/src/extractor.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/extractor.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/jsoncpp.cpp.o -c /workspaces/libfuzz/condition_extractor/src/jsoncpp.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/jsoncpp.cpp"
+},
+{
+  "directory": "/workspaces/libfuzz/condition_extractor/src",
+  "command": "/usr/bin/c++   -I/home/libfuzz/SVF/llvm-14.0.0.obj/include -I/home/libfuzz/SVF/svf/include -I/home/libfuzz/SVF/svf-llvm/include -I/home/libfuzz/SVF/Release-build/include -I/home/libfuzz/SVF/z3.obj/include  -fPIC -std=gnu++14 -O0 -fno-rtti -Wno-deprecated -Wfatal-errors -g   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/extractor.dir/md5.cpp.o -c /workspaces/libfuzz/condition_extractor/src/md5.cpp",
+  "file": "/workspaces/libfuzz/condition_extractor/src/md5.cpp"
+}
+]

@@ -1,0 +1,9 @@
+
+
+wpa -ander -dump-callgraph library.o.bc
+
+wpa -type -dump-icfg library.o.bc
+
+wpa -nander -dump-pag library.o.bc
+
+wpa -nander -dump-pag -dump-constraint-graph library.o.bc

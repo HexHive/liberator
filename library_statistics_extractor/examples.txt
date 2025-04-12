@@ -1,0 +1,55 @@
+./condition_extractor/bin/extractor ./analysis/libtiff_O3/work/lib/libtiff.a.bc  -function TIFFCleanup -output conditions_TIFFClep_old.json -t json -v v2 -debug_condition "(.66.0.0"
+
+./condition_extractor/bin/extractor ./analysis/libtiff_O3/work/lib/libtiff.a.bc  -function TIFFCleanup -output conditions_TIFFClep_old.json -t json -v v2 -debug_condition "(.66, write"
+
+
+./condition_extractor/bin/extractor ./analysis/libtiff_O3/work/lib/libtiff.a.bc  -function TIFFCleanup -output conditions_TIFFClep_old.json -t json -v v2 -debug_condition "(.66, none)"
+
+~/SVF/Release-build/bin/wpa -ander -svfg --dump-vfg ./analysis/libtiff_O3/work/lib/libtiff.a.bc
+
+
+./condition_extractor/bin/extractor ./analysis/libtiff_O3/work/lib/libtiff.a.bc  -function TIFFClient -output conditions_TIFFClep_old.json -t json
+
+# TIFFReadDirectory
+./condition_extractor/bin/extractor /workspaces/libfuzz/analysis/libtiff/work/lib/libtiff.a.bc -function TIFFReadDirectory -output TIFFReadDirectory_O0.json -t json -v v1
+
+./condition_extractor/bin/extractor /workspaces/libfuzz/analysis/libtiff_O3/work/lib/libtiff.a.bc -function TIFFReadDirectory -output TIFFReadDirectory_O3.json -t json -v v1
+
+# TIFFCleanup
+./condition_extractor/bin/extractor /workspaces/libfuzz/analysis/libtiff/work/lib/libtiff.a.bc -function TIFFCleanup -output TIFFCleanup_O0.json -t json -v v1
+
+./condition_extractor/bin/extractor /workspaces/libfuzz/analysis/libtiff_O3/work/lib/libtiff.a.bc -function TIFFCleanup -output TIFFCleanup_O3.json -t json -v v1
+
+./condition_extractor/bin/extractor /workspaces/libfuzz/analysis/libtiff/work/lib/libtiff.a.bc -function TIFFGetField -output TIFFCleanup_O0.json -t json -v v1
+
+LIBFUZZ_LOG_PATH=/workspaces/libfuzz/analysis/libxml2/work/apipass 
+./bin/extractor /workspaces/libfuzz/analysis/libxml2/work/lib/libxml2.a.bc -interface "/workspaces/libfuzz/analysis/libxml2/work/apipass/apis_clang.json" -output "/workspaces/libfuzz/analysis/libxml2/work/apipass/apis_clang.json/conditions.json" -minimize_api "/workspaces/libfuzz/analysis/libxml2/work/apipass/apis_clang.json/apis_minimized.txt" -v v0 -t json -do_indirect_jumps -data_layout "/workspaces/libfuzz/analysis/libxml2/work/apipass/apis_clang.json/data_layout.txt"
+
+
+./bin/extractor /workspaces/libfuzz/analysis/cpu_features/work/lib/libcpu_features.a.bc -function GetX86Info -output "conditions.json" -v v0 -t json -do_indirect_jumps
+
+./bin/extractor /workspaces/libfuzz/analysis/libtiff/work/lib/libtiff.a.bc -function TIFFOpen -output TIFFOpen.json -t json -v v0 -do_indirect_jumps
+
+./bin/extractor /workspaces/libfuzz/analysis/libtiff/work/lib/libtiff.a.bc -function TIFFFdOpen -output TIFFFdOpen.json -t json -v v0 -do_indirect_jumps
+
+
+./bin/extractor /workspaces/libfuzz/analysis/pthreadpool/work/lib/libpthreadpool.a.bc -function pthreadpool_create -output pthreadpool_create.json -t json -v v0 -do_indirect_jumps
+
+
+make -j && ./bin/extractor /workspaces/libfuzz/analysis/minijail/work/lib/libminijail.pie.a.bc -function minijail_namespace_enter_net -output minijail_namespace_enter_net.json -t json -v v1 -do_indirect_jumps
+
+
+make -j && ./bin/extractor /workspaces/libfuzz/analysis/minijail/work/lib/libminijail.pie.a.bc -function minijail_set_supplementary_gids -output minijail_set_supplementary_gids.json -t json -v v1 -do_indirect_jumps
+
+
+export LIBFUZZ_LOG_PATH=`pwd`
+make -j && gdb --args ./bin/extractor /workspaces/libfuzz/analysis/libvpx/work/lib/libvpx.a.bc -function vpx_codec_peek_stream_info -output vpx_codec_peek_stream_info.json -t json -v v1 -do_indirect_jumps
+
+export LIBFUZZ_LOG_PATH=`pwd` \
+./bin/extractor \
+    /workspaces/libfuzz/analysis/pthreadpool/work/lib/libpthreadpool.a.bc \
+    -function pthreadpool_create \
+    -output "$LIBFUZZ_LOG_PATH/conditions.json" \
+    -minimize_api "$LIBFUZZ_LOG_PATH/apis_minimized.txt" \
+    -v v1 -t json -do_indirect_jumps \
+    -data_layout "$LIBFUZZ_LOG_PATH/data_layout.txt"

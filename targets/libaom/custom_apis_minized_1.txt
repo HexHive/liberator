@@ -1,0 +1,3 @@
+aom_uleb_encode_fixed_size
+aom_codec_decode
+aom_codec_get_preview_frame

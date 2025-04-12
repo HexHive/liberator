@@ -1,0 +1,6 @@
+aom_codec_av1_dx
+aom_codec_dec_init_ver
+mem_get_le32
+aom_codec_decode
+aom_codec_get_frame
+# aom_codec_destroy

@@ -1,0 +1,21 @@
+{
+    "analysis": {
+        "apis_llvm": "/workspaces/libfuzz/regression_tests/condition_extractor/test_simpleapi/apis_llvm.json",
+        "apis_clang": "/workspaces/libfuzz/regression_tests/condition_extractor/test_simpleapi/apis_clang.json",
+        "coercemap": "/workspaces/libfuzz/regression_tests/condition_extractor/test_simpleapi/coerce.log",
+        "headers": "/workspaces/libfuzz/regression_tests/condition_extractor/test_simpleapi/exported_functions.txt",
+        "incomplete_types": "/workspaces/libfuzz/regression_tests/condition_extractor/test_simpleapi/incomplete_types.txt",
+        "conditions": "/workspaces/libfuzz/regression_tests/condition_extractor/test_simpleapi/library.json"
+    },
+    "generator": {
+        "workdir": "/workspaces/libfuzz/regression_tests/condition_extractor/test_simpleapi/workdir/",
+        "policy": "constraint_based",
+        "pool_size": 5,
+        "driver_size": 30,
+        "num_seeds": 20,
+        "backend": "libfuzz"
+    },
+    "backend": {
+        "headers": "/workspaces/libfuzz/regression_tests/condition_extractor/test_simpleapi/"
+    }
+}

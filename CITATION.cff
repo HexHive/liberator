@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Toffalini"
+  given-names: "Flavio"
+  email: flavio.toffalini@rub.de                                               
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+  affiliation: RUB;EPFL                                                           
+- family-names: "Badoux"
+  given-names: "Nicolas"
+  email: nicolas.badoux@epfl.ch                                               
+  affiliation: EPFL                                                           
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Zurab"
+  given-names: "Tsinadze"
+  email: nicolas.badoux@epfl.ch                                               
+  affiliation: UNIST                                                           
+- family-names: "Payer"
+  given-names: "Mathias"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+  email: mathias.payer@epfl.ch                                               
+  affiliation: EPFL                                                           
+title: Liberating Libraries through Automated Fuzz Driver Generation: Striking a Balance without Consumer Code
+doi: 10.1145/3729365
+type: conference-paper                                                              
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+month: 7
+year: 2025
+url: https://dx.doi.org/10.1145/3729365
+volume: 2
+collection-title: Proceedings of the ACM on Software Engineering,
+number: FSE,
+collection-type: proceedings
+publisher: ACM New York, NY, USA,

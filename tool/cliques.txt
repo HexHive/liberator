@@ -1,0 +1,75 @@
+Library c-ares
+Graph with 38 nodes and 603 edges
+APIs to work on:
+{'ares_parse_naptr_reply', 'ares_parse_mx_reply', 'ares_parse_srv_reply', 'ares_parse_a_reply', 'ares_parse_ns_reply', 'ares_parse_uri_reply', 'ares_parse_aaaa_reply', 'ares_parse_txt_reply', 'ares_parse_soa_reply', 'ares_parse_caa_reply'}
+clique intersection:
+#cliques 9
+{'ares_parse_naptr_reply', 'ares_parse_mx_reply', 'ares_parse_srv_reply', 'ares_parse_a_reply', 'ares_parse_ns_reply', 'ares_parse_uri_reply', 'ares_parse_aaaa_reply', 'ares_parse_txt_reply', 'ares_parse_soa_reply', 'ares_parse_caa_reply'}
+==============================
+Library libaom
+Graph with 37 nodes and 275 edges
+APIs to work on:
+{'aom_codec_get_frame', 'aom_codec_decode', 'aom_codec_dec_init_ver'}
+clique intersection:
+#cliques 21
+{'aom_codec_get_frame'}
+{'aom_codec_dec_init_ver'}
+{'aom_codec_decode', 'aom_codec_dec_init_ver'}
+{'aom_codec_get_frame', 'aom_codec_decode', 'aom_codec_dec_init_ver'}
+{'aom_codec_get_frame', 'aom_codec_dec_init_ver'}
+{'aom_codec_decode'}
+{'aom_codec_get_frame', 'aom_codec_decode'}
+==============================
+Library libpcap
+Graph with 66 nodes and 1380 edges
+APIs to work on:
+{'pcap_open_offline', 'pcap_next_ex', 'pcap_stats', 'pcap_setfilter'}
+clique intersection:
+#cliques 38
+{'pcap_next_ex'}
+{'pcap_setfilter', 'pcap_next_ex'}
+{'pcap_stats', 'pcap_next_ex', 'pcap_setfilter'}
+{'pcap_open_offline'}
+{'pcap_open_offline', 'pcap_next_ex', 'pcap_stats', 'pcap_setfilter'}
+==============================
+Library libvpx
+Graph with 33 nodes and 260 edges
+APIs to work on:
+{'vpx_codec_decode', 'vpx_codec_control_', 'vpx_codec_dec_init_ver', 'vpx_codec_get_frame'}
+clique intersection:
+#cliques 13
+{'vpx_codec_dec_init_ver'}
+{'vpx_codec_decode', 'vpx_codec_dec_init_ver'}
+{'vpx_codec_decode', 'vpx_codec_control_', 'vpx_codec_dec_init_ver', 'vpx_codec_get_frame'}
+{'vpx_codec_decode', 'vpx_codec_control_', 'vpx_codec_dec_init_ver'}
+{'vpx_codec_control_', 'vpx_codec_dec_init_ver'}
+{'vpx_codec_get_frame'}
+==============================
+Library libhtp
+Graph with 106 nodes and 2286 edges
+APIs to work on:
+{'htp_connp_res_data_consumed', 'htp_connp_create', 'htp_connp_open', 'htp_connp_set_user_data', 'htp_connp_req_data_consumed'}
+clique intersection:
+#cliques 65
+{'htp_connp_res_data_consumed', 'htp_connp_create', 'htp_connp_open', 'htp_connp_set_user_data', 'htp_connp_req_data_consumed'}
+{'htp_connp_open'}
+{'htp_connp_set_user_data'}
+{'htp_connp_res_data_consumed', 'htp_connp_create', 'htp_connp_req_data_consumed'}
+{'htp_connp_res_data_consumed', 'htp_connp_req_data_consumed', 'htp_connp_open'}
+{'htp_connp_res_data_consumed', 'htp_connp_set_user_data', 'htp_connp_req_data_consumed', 'htp_connp_open'}
+{'htp_connp_create'}
+{'htp_connp_create', 'htp_connp_open'}
+{'htp_connp_set_user_data', 'htp_connp_open'}
+{'htp_connp_set_user_data', 'htp_connp_create'}
+==============================
+Library libtiff
+Graph with 88 nodes and 2194 edges
+APIs to work on:
+{'TIFFOpen', 'TIFFSetErrorHandler', 'TIFFClose', 'TIFFSetWarningHandler', 'TIFFReadRGBAImage'}
+clique intersection:
+#cliques 18
+{'TIFFClose', 'TIFFOpen', 'TIFFReadRGBAImage'}
+{'TIFFOpen'}
+{'TIFFReadRGBAImage'}
+{'TIFFSetErrorHandler', 'TIFFSetWarningHandler'}
+==============================

@@ -1,0 +1,66 @@
+cpu_features:
+	cov >  0%: 200/200 100.00%
+	cov > 10%: 195/200 97.50%
+	max cov: 19.15%
+	#crashes (cov != 0): avg 0.00 std 0.00
+	#unique crashes (cov != 0): avg 0.00 std 0.00
+libtiff:
+	cov >  0%: 199/200 99.50%
+	cov > 10%: 62/200 31.00%
+	max cov: 10.82%
+	#crashes (cov != 0): avg 29.97 std 138.97
+	#unique crashes (cov != 0): avg 0.00 std 0.00
+minijail:
+	cov >  0%: 142/200 71.00%
+	cov > 10%: 99/200 49.50%
+	max cov: 9.57%
+	#crashes (cov != 0): avg 244.85 std 534.77
+	#unique crashes (cov != 0): avg 0.00 std 0.00
+pthreadpool:
+	cov >  0%: 200/200 100.00%
+	cov > 10%: 85/200 42.50%
+	max cov: 21.60%
+	#crashes (cov != 0): avg 8.95 std 16.70
+	#unique crashes (cov != 0): avg 0.00 std 0.00
+libaom:
+	cov >  0%: 96/200 48.00%
+	cov > 10%: 2/200 1.00%
+	max cov: 1.89%
+	#crashes (cov != 0): avg 208.15 std 640.59
+	#unique crashes (cov != 0): avg 0.00 std 0.00
+libvpx:
+	cov >  0%: 151/200 75.50%
+	cov > 10%: 2/200 1.00%
+	max cov: 3.91%
+	#crashes (cov != 0): avg 315.67 std 596.93
+	#unique crashes (cov != 0): avg 0.00 std 0.00
+libhtp:
+	cov >  0%: 61/200 30.50%
+	cov > 10%: 33/200 16.50%
+	max cov: 2.79%
+	#crashes (cov != 0): avg 112.56 std 345.22
+	#unique crashes (cov != 0): avg 0.00 std 0.00
+libpcap:
+	cov >  0%: 157/200 78.50%
+	cov > 10%: 143/200 71.50%
+	max cov: 25.26%
+	#crashes (cov != 0): avg 344.17 std 551.72
+	#unique crashes (cov != 0): avg 0.00 std 0.00
+c-ares:
+	cov >  0%: 200/200 100.00%
+	cov > 10%: 194/200 97.00%
+	max cov: 18.00%
+	#crashes (cov != 0): avg 2.29 std 3.61
+	#unique crashes (cov != 0): avg 0.00 std 0.00
+zlib:
+	cov >  0%: 130/200 65.00%
+	cov > 10%: 100/200 50.00%
+	max cov: 24.43%
+	#crashes (cov != 0): avg 290.95 std 536.17
+	#unique crashes (cov != 0): avg 0.00 std 0.00
+cjson:
+	cov >  0%: 156/200 78.00%
+	cov > 10%: 150/200 75.00%
+	max cov: 42.66%
+	#crashes (cov != 0): avg 173.07 std 415.40
+	#unique crashes (cov != 0): avg 0.00 std 0.00

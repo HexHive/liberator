@@ -1,0 +1,6 @@
+cJSON_ParseWithOpts
+cJSON_PrintBuffered
+cJSON_Print
+cJSON_PrintUnformatted
+cJSON_Minify
+cJSON_Delete

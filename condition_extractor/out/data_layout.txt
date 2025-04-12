@@ -1,0 +1,7 @@
+struct.error 128 2654002ee2a9714af3389df282148ec0 0
+struct.internal_hooks 192 6af3d6e25fbdb150e2dba9a442ae96f7 0
+struct.cJSON 512 d8ed35586d0cd2b6d913df585e9050d4 0
+struct.cJSON_Hooks 128 08f3412b628483f9c62a9169097af477 0
+struct.parse_buffer 448 a442742c79db4ce7f33c2e74d6911e7d 0
+struct.lconv 768 938b95b17def6f2f4c8ad7e1bfba36b0 0
+struct.printbuffer 512 bb2da74ec670371ee2ca3aa808385f21 0

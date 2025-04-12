@@ -1,0 +1,11 @@
+bin
+CMakeFiles
+CMakeCache.*
+*.dot
+*.cmake
+*.ll
+*/**/Makefile
+Makefile
+*.a
+*.bc
+.cache

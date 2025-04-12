@@ -1,0 +1,5 @@
+aom_codec_set_option
+aom_codec_enc_init_ver
+aom_codec_av1_dx
+aom_codec_err_to_string
+aom_codec_decode

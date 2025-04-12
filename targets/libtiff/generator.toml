@@ -1,0 +1,30 @@
+[analysis]
+apis_llvm = "/workspaces/libfuzz/analysis/libtiff/work/apipass/apis_llvm.json"
+apis_clang = "/workspaces/libfuzz/analysis/libtiff/work/apipass/apis_clang.json"
+coercemap = "/workspaces/libfuzz/analysis/libtiff/work/apipass/coerce.log"
+headers = "/workspaces/libfuzz/analysis/libtiff/work/apipass/exported_functions.txt"
+incomplete_types = "/workspaces/libfuzz/analysis/libtiff/work/apipass/incomplete_types.txt"
+conditions = "/workspaces/libfuzz/analysis/libtiff/work/apipass/conditions.json"
+# minimum_apis = "/workspaces/libfuzz/analysis/libtiff/work/apipass/apis_minimized.txt"
+# minimum_apis = "/workspaces/libfuzz/targets/libtiff/custom_apis_minized.txt"
+# minimum_apis = "/workspaces/libfuzz/analysis/libtiff/work/apipass/apis_minimized_3.txt"
+minimum_apis = ""
+# minimum_apis = "/workspaces/libfuzz/targets/libtiff/min_api.txt"
+data_layout = "/workspaces/libfuzz/analysis/libtiff/work/apipass/data_layout.txt"
+enum_types = "/workspaces/libfuzz/analysis/libtiff/work/apipass/enum_types.txt"
+weights = "/workspaces/libfuzz/analysis/libtiff/work/apipass/weights.json"
+
+[generator]
+workdir = "/workspaces/libfuzz/workdir/libtiff"
+policy = "constraint_based"
+dep_graph = "type"
+# dep_graph = "undef"
+pool_size = 1
+driver_size = 2
+num_seeds = 1
+backend = "libfuzz"
+bias = "none"
+
+[backend]
+headers = "/workspaces/libfuzz/analysis/libtiff/work/include/"
+public_headers = "/workspaces/libfuzz/targets/libtiff/public_headers.txt"

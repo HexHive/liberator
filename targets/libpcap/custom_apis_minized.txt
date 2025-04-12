@@ -1,0 +1,8 @@
+pcap_open_offline
+pcap_next_ex
+pcap_stats
+pcap_close
+pcap_open_dead
+pcap_compile
+pcap_setfilter
+pcap_freecode

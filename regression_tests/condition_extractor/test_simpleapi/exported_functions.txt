@@ -1,0 +1,7 @@
+create(int, int)
+first(my_struct *, int)
+second(my_struct *, int)
+close(my_struct *)
+third(void *, my_struct *)
+foo(int)
+indirect_test(my_struct *, int)

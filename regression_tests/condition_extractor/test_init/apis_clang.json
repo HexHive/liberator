@@ -1,0 +1,5 @@
+{"function_name": "get_a_struct", "namespace": [], "return_info": {"const": false, "type_clang": "iface_t*"}, "arguments_info": []}
+{"function_name": "init_a_context", "namespace": [], "return_info": {"const": false, "type_clang": "void"}, "arguments_info": [{"const": false, "type_clang": "iface_t*"}, {"const": false, "type_clang": "a_context_t*"}, {"const": false, "type_clang": "int"}, {"const": false, "type_clang": "short"}]}
+{"function_name": "fake_init", "namespace": [], "return_info": {"const": false, "type_clang": "int"}, "arguments_info": [{"const": false, "type_clang": "iface_t*"}, {"const": false, "type_clang": "a_context_t*"}]}
+{"function_name": "use_context", "namespace": [], "return_info": {"const": false, "type_clang": "int"}, "arguments_info": [{"const": false, "type_clang": "a_context_t*"}, {"const": false, "type_clang": "int"}]}
+{"function_name": "get_something", "namespace": [], "return_info": {"const": false, "type_clang": "int"}, "arguments_info": [{"const": false, "type_clang": "iface_t*"}, {"const": false, "type_clang": "int"}]}

@@ -1,0 +1,13 @@
+{'function_name': '__cxx_global_var_init', 'return_info': {'name': 'return', 'flag': 'val', 'size': 0, 'type': 'void'}, 'arguments_info': []}
+{'function_name': '_Z15echo_connection13my_connectionPS_', 'return_info': {'name': 'return', 'flag': 'val', 'size': 0, 'type': 'void'}, 'arguments_info': [{'name': 'a_conn', 'flag': 'ret', 'size': 160, 'type': '%struct.my_connection*'}, {'name': 'r_conn', 'flag': 'ref', 'size': 64, 'type': '%struct.my_connection*'}]}
+{'function_name': '_Z15make_connectioniiPc', 'return_info': {'name': 'return', 'flag': 'val', 'size': 0, 'type': 'void'}, 'arguments_info': [{'name': 'agg.result', 'flag': 'ret', 'size': 64, 'type': '%struct.my_connection*'}, {'name': 'arg_x', 'flag': 'val', 'size': 32, 'type': 'i32'}, {'name': 'arg_z', 'flag': 'val', 'size': 32, 'type': 'i32'}, {'name': 'arg_s', 'flag': 'ref', 'size': 64, 'type': 'i8*'}]}
+{'function_name': '_Z16make_connection2iiPc', 'return_info': {'name': 'return', 'flag': 'ref', 'size': 64, 'type': '%struct.my_connection*'}, 'arguments_info': [{'name': 'arg_x', 'flag': 'val', 'size': 32, 'type': 'i32'}, {'name': 'arg_z', 'flag': 'val', 'size': 32, 'type': 'i32'}, {'name': 'arg_s', 'flag': 'ref', 'size': 64, 'type': 'i8*'}]}
+{'function_name': '_Z11print_valuePii', 'return_info': {'name': 'return', 'flag': 'val', 'size': 0, 'type': 'void'}, 'arguments_info': [{'name': 'x', 'flag': 'ref', 'size': 64, 'type': 'i32*'}, {'name': 'b', 'flag': 'val', 'size': 32, 'type': 'i32'}]}
+{'function_name': '_Z9set_statei', 'return_info': {'name': 'return', 'flag': 'val', 'size': 0, 'type': 'void'}, 'arguments_info': [{'name': 'x', 'flag': 'val', 'size': 32, 'type': 'i32'}]}
+{'function_name': '_Z9get_statev', 'return_info': {'name': 'return', 'flag': 'val', 'size': 32, 'type': 'i32'}, 'arguments_info': []}
+{'function_name': 'leak', 'return_info': {'name': 'return', 'flag': 'val', 'size': 0, 'type': 'void'}, 'arguments_info': []}
+{'function_name': 'taint', 'return_info': {'name': 'return', 'flag': 'val', 'size': 32, 'type': 'i32'}, 'arguments_info': []}
+{'function_name': 'startservice', 'return_info': {'name': 'return', 'flag': 'val', 'size': 0, 'type': 'void'}, 'arguments_info': []}
+{'function_name': 'stopservice', 'return_info': {'name': 'return', 'flag': 'val', 'size': 0, 'type': 'void'}, 'arguments_info': []}
+{'function_name': 'getservicestate', 'return_info': {'name': 'return', 'flag': 'val', 'size': 32, 'type': 'i32'}, 'arguments_info': []}
+{'function_name': '_GLOBAL__sub_I_myLib.cpp', 'return_info': {'name': 'return', 'flag': 'val', 'size': 0, 'type': 'void'}, 'arguments_info': []}

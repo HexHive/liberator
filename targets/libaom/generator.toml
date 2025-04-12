@@ -1,0 +1,29 @@
+[analysis]
+apis_llvm = "/workspaces/libfuzz/analysis/libaom/work/apipass/apis_llvm.json"
+apis_clang = "/workspaces/libfuzz/analysis/libaom/work/apipass/apis_clang.json"
+coercemap = "/workspaces/libfuzz/analysis/libaom/work/apipass/coerce.log"
+headers = "/workspaces/libfuzz/analysis/libaom/work/apipass/exported_functions.txt"
+incomplete_types = "/workspaces/libfuzz/analysis/libaom/work/apipass/incomplete_types.txt"
+conditions = "/workspaces/libfuzz/analysis/libaom/work/apipass/conditions.json"
+# minimum_apis = "/workspaces/libfuzz/analysis/libaom/work/apipass/apis_minimized.txt"
+# minimum_apis = "/workspaces/libfuzz/targets/libaom/custom_apis_minized.txt"
+# minimum_apis = "/workspaces/libfuzz/analysis/libaom/work/apipass/apis_minimized_3.txt"
+minimum_apis = ""
+data_layout = "/workspaces/libfuzz/analysis/libaom/work/apipass/data_layout.txt"
+enum_types = "/workspaces/libfuzz/analysis/libaom/work/apipass/enum_types.txt"
+weights = "/workspaces/libfuzz/analysis/libaom/work/apipass/weights.json"
+
+
+[generator]
+workdir = "/workspaces/libfuzz/workdir/libaom"
+policy = "constraint_based"
+dep_graph = "type"
+# dep_graph = "undef"
+pool_size = 20
+driver_size = 5
+num_seeds = 1
+backend = "libfuzz"
+
+[backend]
+headers = "/workspaces/libfuzz/analysis/libaom/work/include/"
+public_headers = "/workspaces/libfuzz/targets/libaom/public_headers.txt"

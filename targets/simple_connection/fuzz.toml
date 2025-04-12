@@ -1,0 +1,10 @@
+[analysis]
+apis = "./targets/simple_connection/apis.log"
+coercemap = "./targets/simple_connection/coerce.log"
+headers = "./targets/simple_connection/"
+dependency_policy = "only_type"
+
+[fuzzer]
+workdir = "./workdir"
+pool_size = 30
+miner = "mock"

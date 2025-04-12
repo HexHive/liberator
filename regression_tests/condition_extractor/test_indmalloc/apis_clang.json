@@ -1,0 +1,4 @@
+{"function_name": "create", "namespace": [], "return_info": {"const": false, "type_clang": "my_struct*"}, "arguments_info": [{"const": false, "type_clang": "char*"}]}
+{"function_name": "close", "namespace": [], "return_info": {"const": false, "type_clang": "void"}, "arguments_info": [{"const": false, "type_clang": "my_struct*"}]}
+{"function_name": "my_free", "namespace": [], "return_info": {"const": false, "type_clang": "void"}, "arguments_info": [{"const": false, "type_clang": "void*"}]}
+{"function_name": "my_malloc", "namespace": [], "return_info": {"const": false, "type_clang": "void*"}, "arguments_info": [{"const": false, "type_clang": "unsigned long"}]}

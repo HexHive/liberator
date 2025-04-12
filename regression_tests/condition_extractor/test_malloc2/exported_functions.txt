@@ -1,0 +1,1 @@
+TIFFRegisterCODEC(uint16_t, const char *)

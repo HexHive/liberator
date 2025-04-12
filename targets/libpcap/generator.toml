@@ -1,0 +1,30 @@
+[analysis]
+apis_llvm = "/workspaces/libfuzz/analysis/libpcap/work/apipass/apis_llvm.json"
+apis_clang = "/workspaces/libfuzz/analysis/libpcap/work/apipass/apis_clang.json"
+coercemap = "/workspaces/libfuzz/analysis/libpcap/work/apipass/coerce.log"
+headers = "/workspaces/libfuzz/analysis/libpcap/work/apipass/exported_functions.txt"
+incomplete_types = "/workspaces/libfuzz/analysis/libpcap/work/apipass/incomplete_types.txt"
+conditions = "/workspaces/libfuzz/analysis/libpcap/work/apipass/conditions.json"
+# minimum_apis = "/workspaces/libfuzz/analysis/libpcap/work/apipass/apis_minimized.txt"
+# minimum_apis = "/workspaces/libfuzz/targets/libpcap/minimal_api_2.txt"
+# minimum_apis = "/workspaces/libfuzz/analysis/libpcap/work/apipass/apis_minimized_3.txt"
+minimum_apis = ""
+# minimum_apis = "/workspaces/libfuzz/targets/libpcap/mini.txt"
+data_layout = "/workspaces/libfuzz/analysis/libpcap/work/apipass/data_layout.txt"
+enum_types = "/workspaces/libfuzz/analysis/libpcap/work/apipass/enum_types.txt"
+weights = "/workspaces/libfuzz/analysis/libpcap/work/apipass/weights.json"
+
+
+[generator]
+workdir = "/workspaces/libfuzz/workdir/libpcap"
+policy = "constraint_based"
+dep_graph = "type"
+# dep_graph = "undef"
+pool_size = 1
+driver_size = 5
+num_seeds = 1
+backend = "libfuzz"
+
+[backend]
+headers = "/workspaces/libfuzz/analysis/libpcap/work/include/"
+public_headers = "/workspaces/libfuzz/targets/libpcap/public_headers.txt"

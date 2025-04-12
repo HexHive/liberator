@@ -1,0 +1,26 @@
+[analysis]
+apis_llvm = "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/apis_llvm.json"
+apis_clang = "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/apis_clang.json"
+coercemap = "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/coerce.log"
+headers = "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/exported_functions.txt"
+incomplete_types = "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/incomplete_types.txt"
+conditions = "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/library.json"
+# minimum_apis = ""
+minimum_apis = "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/min_api.txt"
+data_layout = "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/datalayout.txt"
+enum_types = "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/enum_types.txt"
+
+
+[generator]
+workdir = "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/workdir/"
+policy = "constraint_based"
+dep_graph = "type"
+# dep_graph = "undef"
+pool_size = 1
+driver_size = 3
+num_seeds = 1
+backend = "libfuzz"
+
+[backend]
+headers =  "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/"
+public_headers = "/workspaces/libfuzz/regression_tests/condition_extractor/test_init/public_headers.txt"

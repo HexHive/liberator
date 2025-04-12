@@ -1,0 +1,1 @@
+struct.a_struct 128 5d6c83d4700ec77299a0470f300425ff 0

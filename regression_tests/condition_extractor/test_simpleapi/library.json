@@ -1,0 +1,142 @@
+[
+    {
+        "function_name": "create",
+        "param_0": {
+            "access_type_set": [
+                {
+                    "access": "read",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "c86ee0d9d7ed3e7b4fdbf486fa6c0ebb",
+                    "type_string": "i32"
+                }
+            ],
+            "is_array": false,
+            "is_file_path": false,
+            "is_malloc_size": false,
+            "len_depends_on": ""
+        },
+        "param_1": {
+            "access_type_set": [
+                {
+                    "access": "read",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "c86ee0d9d7ed3e7b4fdbf486fa6c0ebb",
+                    "type_string": "i32"
+                }
+            ],
+            "is_array": false,
+            "is_file_path": false,
+            "is_malloc_size": false,
+            "len_depends_on": ""
+        },
+        "param_2": {
+            "access_type_set": [
+                {
+                    "access": "read",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "18b89c5f007a284357aa3c461c3c31b1",
+                    "type_string": "i8*"
+                }
+            ],
+            "is_array": false,
+            "is_file_path": true,
+            "is_malloc_size": false,
+            "len_depends_on": ""
+        },
+        "return": {
+            "access_type_set": [
+                {
+                    "access": "read",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "18b89c5f007a284357aa3c461c3c31b1",
+                    "type_string": "i8*"
+                },
+                {
+                    "access": "read",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "499ca63b4bb566350429f3a9f0845787",
+                    "type_string": "%struct.a_struct*"
+                },
+                {
+                    "access": "write",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "499ca63b4bb566350429f3a9f0845787",
+                    "type_string": "%struct.a_struct*"
+                },
+                {
+                    "access": "return",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "499ca63b4bb566350429f3a9f0845787",
+                    "type_string": "%struct.a_struct*"
+                },
+                {
+                    "access": "delete",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "18b89c5f007a284357aa3c461c3c31b1",
+                    "type_string": "i8*"
+                },
+                {
+                    "access": "create",
+                    "fields": [],
+                    "parent": 0,
+                    "type": "499ca63b4bb566350429f3a9f0845787",
+                    "type_string": "%struct.a_struct*"
+                },
+                {
+                    "access": "read",
+                    "fields": [
+                        -1
+                    ],
+                    "parent": {
+                        "access": "read",
+                        "fields": [],
+                        "type": "499ca63b4bb566350429f3a9f0845787",
+                        "type_string": "%struct.a_struct*"
+                    },
+                    "type": "499ca63b4bb566350429f3a9f0845787",
+                    "type_string": "%struct.a_struct*"
+                },
+                {
+                    "access": "write",
+                    "fields": [
+                        0
+                    ],
+                    "parent": {
+                        "access": "read",
+                        "fields": [],
+                        "type": "499ca63b4bb566350429f3a9f0845787",
+                        "type_string": "%struct.a_struct*"
+                    },
+                    "type": "c86ee0d9d7ed3e7b4fdbf486fa6c0ebb",
+                    "type_string": "i32"
+                },
+                {
+                    "access": "write",
+                    "fields": [
+                        1
+                    ],
+                    "parent": {
+                        "access": "read",
+                        "fields": [],
+                        "type": "499ca63b4bb566350429f3a9f0845787",
+                        "type_string": "%struct.a_struct*"
+                    },
+                    "type": "c86ee0d9d7ed3e7b4fdbf486fa6c0ebb",
+                    "type_string": "i32"
+                }
+            ],
+            "is_array": false,
+            "is_file_path": false,
+            "is_malloc_size": false,
+            "len_depends_on": ""
+        }
+    }
+]

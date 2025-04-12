@@ -1,0 +1,5 @@
+struct.a_struct 192
+struct._IO_FILE 1728
+struct._IO_marker 0
+struct._IO_codecvt 0
+struct._IO_wide_data 0
