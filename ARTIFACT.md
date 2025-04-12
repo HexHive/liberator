@@ -3,7 +3,7 @@
 This guide summarizes how to reproduce the experiments from the paper:  
 **"Liberating libraries through automated fuzz driver generation"**
 
-- DOI: [10.5281/zenodo.14888072](https://doi.org/10.5281/zenodo.14888072)  
+- DOI: [10.5281/zenodo.13752276](https://doi.org/10.5281/zenodo.13752276})  
 - Repository: [github.com/HexHive/liberator](https://github.com/HexHive/liberator)  
 - Containerized setup via Docker  
 - Authors: Flavio Toffalini, Nicolas Badoux, Zurab Tsinadze, Mathias Payer

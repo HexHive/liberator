@@ -1,4 +1,4 @@
-# libErator artifact
+# libErator Artifact
 
 This repository contains the code for the FSE'25 paper: [`Liberating Libraries through Automated Fuzz Driver Generation`](https://nebelwelt.net/files/25FSE2.pdf).
 
@@ -28,7 +28,7 @@ The whole framework is composed of three main components:
 ```
 Or the cite button on the left of GitHub interface.
 
-## Run the artifact
+## Run the Artifact
 
 We prepared a small-scale experiment to execute our framework. The instructions
 are collected **[here](ARTIFACT.md)**. Notice that the artifact only covers a short
@@ -46,7 +46,7 @@ cd fuzzing_campaigns/
 ./fuzzing_pipeline_generation.sh
 ```
 
-At the end, yo will have many spurious files in your home, to delete (almost) all of them, do as follows.
+At the end, you will have many spurious files in your home, to delete (almost) all of them, do as follows.
 
 ```bash
 cd ..
@@ -108,12 +108,12 @@ In the host, run the script:
 ```
 It will install the minimal Python packages and compile our custom libfuzzer version.
 
-## How to inteagrate a new a target (a new library)
+## How to Integrate a new Target (a new Library)
 
 - [Add a new Target](./_docs/AddNewTarget.md)
-- [Debug a Target in local](./_docs/DebugLocal.md)
+- [Debug a Target Locally](./_docs/DebugLocal.md)
 
-## Specific Gudies
+## Specific Guides
 
 Ad-hoc guides for specific components of the project
 
@@ -122,7 +122,7 @@ Ad-hoc guides for specific components of the project
 - [Fuzzing a Driver](./_docs/FuzzingDrivers.md)
 - [Statistics](./_docs/Statistics.md)
 
-## Internal technical details
+## Internal Technical Details
 
 - [Driver IR](./_docs/Driver_IR.md)
 
