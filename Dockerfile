@@ -94,6 +94,7 @@ ENV DRIVER "*"
 
 RUN mkdir -p ${HOME}/${TARGET_NAME}
 WORKDIR ${HOME}/${TARGET_NAME}
+RUN sudo chown ${USERNAME}:${USERNAME} ${HOME}
 COPY --chown=${USERNAME}:${USERNAME}  ./targets/${TARGET_NAME}/preinstall.sh ${HOME}/${TARGET_NAME}
 RUN sudo ./preinstall.sh
 COPY --chown=${USERNAME}:${USERNAME}  ./targets/${TARGET_NAME}/fetch.sh ${HOME}/${TARGET_NAME}
@@ -163,6 +164,7 @@ ENV DRIVER_FOLDER ${LIBFUZZ}/workdir/${TARGET_NAME}/drivers
 # I want to install the library at building time, so later I only need to build
 # the drivers
 WORKDIR ${LIBFUZZ}/targets/${TARGET_NAME}
+RUN sudo chown ${USERNAME}:${USERNAME} ${HOME}
 COPY --chown=${USERNAME}:${USERNAME}  ./targets/${TARGET_NAME}/preinstall.sh ${LIBFUZZ}/targets/${TARGET_NAME}
 RUN sudo ./preinstall.sh
 COPY --chown=${USERNAME}:${USERNAME}  ./targets/${TARGET_NAME}/fetch.sh ${LIBFUZZ}/targets/${TARGET_NAME}
