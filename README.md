@@ -22,7 +22,7 @@ The whole framework is composed of three main components:
   volume = 2,
   publisher = {ACM New York, NY, USA},
   title = {{Liberating Libraries through Automated Fuzz Driver Generation}},
-  url = {https://dx.doi.org/10.14722/3729365},
+  url = {https://dx.doi.org/10.1145/3729365},
   year = {2025}
 }
 ```
