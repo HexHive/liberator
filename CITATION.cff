@@ -53,7 +53,7 @@ preferred-citation:
   month: 7
   title: "Liberating Libraries through Automated Fuzz Driver Generation"
   year: 2025
-  url: https://dx.doi.org/10.14722/3729365
+  url: https://dx.doi.org/10.1145/3729365 
   volume: 2
   collection-title: Proceedings of the ACM on Software Engineering,
   collection-type: proceedings
